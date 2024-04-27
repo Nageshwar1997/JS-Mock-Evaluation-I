@@ -1,0 +1,74 @@
+/* Resetting default styles and setting font */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the entire page */
+.container {
+  border: 1px solid black;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Filters section */
+.filters {
+  border: 1px solid red;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  gap: 30px; /* Spacing between filter elements */
+}
+
+/* Grid layout for displaying products */
+.products-grid {
+  border: 1px solid purple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  gap: 20px; /* Spacing between products */
+}
+
+/* Styling for each product item */
+.productItem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+
+  /* Nested styling for h3 and p elements */
+  & h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+
+  & p {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+/* Styling for product images */
+.productItem > img {
+  width: 100%;
+  height: 250px;
+}
+
+/* Styling for input elements */
+input {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+/* Styling for option and select elements */
+option,
+select {
+  text-transform: capitalize; /* Capitalize text in dropdown options */
+}
