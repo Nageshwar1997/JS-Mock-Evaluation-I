@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product Listing</h1>
+      <!-- Filters section -->
+      <div class="filters">
+        <div>
+          <!-- Filter by category label -->
+          <label>Filter by Category:</label>
+          <!-- Dropdown for category filter -->
+          <select id="category-filter">
+            <option value="all">All</option>
+          </select>
+        </div>
+        <div>
+          <!-- Sort by price label -->
+          <label>Sort by Price:</label>
+          <!-- Dropdown for sorting -->
+          <select id="sort-by">
+            <option value="all">Sort by Price</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+          </select>
+        </div>
+      </div>
+      <!-- Search input -->
+      <input type="text" id="search" placeholder="Search for Products....." />
+      <!-- Products grid -->
+      <div class="products-grid" id="products-grid"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
